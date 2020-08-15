@@ -1,8 +1,9 @@
 #navbar{
-  padding: 10px 0;
+  padding: 15px 0;
   width: 100%;
-  position: relative;
-  border-bottom: 5px solid var(--color-secondary);
+  position: absolute;
+  top: 0px;
+  z-index: 2;
 }
 
 #navbar .center{
@@ -23,6 +24,7 @@
   right: 20px;
   font-size: 30px;
   cursor: pointer;
+  color: var(--color-default);
 }
 
 #menu-mobile{
@@ -83,18 +85,18 @@
 #menu-desktop ul li a{
   text-decoration: none;
   font-size: 17px;
-  color: var(--color-primary);
+  color: var(--color-default);
   font-weight: bold;
   padding-bottom: 16px;
   transition: border-bottom .2s;
 }
 
 #menu-desktop ul li a:hover{
-  border-bottom: 4px solid var(--color-primary);
+  border-bottom: 4px solid var(--color-default);
 }
 
 #section-1{
-  height: calc(100vh - 79px);
+  height: 100vh;
   background: var(--color-default) url('/images/background-section1.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -129,6 +131,7 @@
 #section-2{
   height: 50vh;
   padding: 30px 0;
+  background-color: #afb9ec;
 }
 
 #section-2 .flex{
@@ -157,6 +160,7 @@
 #section-3{
   height: 50vh;
   padding: 30px 0;
+  background-color: var(--color-section-2);
 }
 
 #section-3 .flex{
@@ -362,6 +366,8 @@
 
   #section-3{
     padding: 50px 0;
+    border-radius: 0px 0px 80px 80px;
+    z-index: 3;
   }
 
   #section-3 h1{
@@ -388,7 +394,7 @@
 
 @media (min-width: 750px) {  
   #section-1 .center h1{
-    top: -200px;
+    top: -100px;
     transition: top 1s;
   }
   

@@ -3,6 +3,7 @@
   --color-secondary: #183f72;
   --color-primary-dark: #0c2442;
   --color-default: #fff;
+  --color-section-2: #e8eaf6;
 }
 
 * {
@@ -14,6 +15,7 @@
 html,body {
   width: 100%;
   height: 100%;
+  background-color: var(--color-section-2);
 }
 
 .center {
